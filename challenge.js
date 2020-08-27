@@ -58,7 +58,7 @@ taskInput.value(Boolean);
 }
 
 
-// Store in ls
+// Store in local storage
 
 storeTask(taskInput.value);
 // console.log('Hey there 😀');
@@ -217,7 +217,7 @@ localStorage.clear();
 }
 
 
-// switch theme dynamically
+// switch theme dynamically 
 
 function switchTheme() {
 // console.log(e.target.checked);
