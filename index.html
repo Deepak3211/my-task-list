@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Task List</title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+<div class="theme-switch-wrapper">
+<span id="toggle-icon">
+<span class="toggle-text">
+Light Mode 
+</span>
+<i class=" fas fa-sun"></i>
+</span>
+<label class="theme-switch">
+<input type="checkbox">
+<div class="slider round">
+
+</div>
+</label>
+</div>
+
+<div id="main" class="main">
+<h2>My Task List</h2>
+<form action="" id ="taskForm">
+
+<input type="text" id = "task" placeholder="Enter a task 😀">
+<!-- <span class="addBtn">Add</span> -->
+<input type="submit" value="Add Task" class="addBtn">
+</form>
+<div class="card-action">
+
+<!-- <h5 id="task-title"> Filter Tasks</h5> -->
+<span class="input-field col s12">
+<input type="text" name = "filter" id="filter" placeholder="Filter task 😀">
+<label for="filter">Filter Task</label>
+</span>
+
+<ul id="tasks">
+
+</ul>
+<a href="" class="clear-tasks">Clear Tasks</a>
+</div>
+
+</div>
+
+</div>
+<script src="./challenge.js"></script>
+
+</body>
+</html>
