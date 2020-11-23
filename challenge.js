@@ -199,17 +199,19 @@ localStorage.setItem('tasks', JSON.stringify(tasks));
 // clear all tasks
 
 function clrTasks(e) {
-if (confirm("Are You Sure 😁")) {
-while (tasksList.firstChild) {
+
+
+  if (confirm("Are You Sure 😁") ) {
+    while (tasksList.firstChild) {
+    }
 tasksList.removeChild(tasksList.firstChild);
 }
-
-
 }
+
+
 // clr from ls 
 clrFromLs();
 
-}
 
 
 function clrFromLs(){
@@ -225,9 +227,9 @@ const target = container;
 const targetExtend = target.classList.value;
 
 
-targetExtend === 'main' ?  toggleIcon.children[0].textContent = "Dark Mode" : toggleIcon.children[0].textContent = "Light Mode";
+targetExtend === 'main' ?  toggleIcon.children[0].textContent = "Enable Light  Mode" : toggleIcon.children[0].textContent = "Enable Dark Mode";
 
-targetExtend === 'main' ? toggleIcon.children[1].classList.replace("fa-sun", "fa-moon") : toggleIcon.children[1].classList.replace("fa-moon", "fa-sun");
+targetExtend === 'main' ? toggleIcon.children[1].classList.replace("fa-moon", "fa-sun") : toggleIcon.children[1].classList.replace("fa-sun", "fa-moon");
 
 targetExtend === 'main' ? 
 localStorage.setItem('theme','dark'):
