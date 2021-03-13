@@ -147,9 +147,9 @@ target.classList.toggle("done");
 removeTaskFromLs(e.target);
 
 filterTasks.value = '';
-getTasks()
 
-  }
+}
+
 }
 
 
@@ -232,9 +232,9 @@ const target = container;
 const targetExtend = target.classList.value;
 
 
-targetExtend === 'main' ?  toggleIcon.children[0].textContent = "Enable Light  Mode" : toggleIcon.children[0].textContent = "Enable Dark Mode";
+targetExtend === 'main' ?  toggleIcon.children[0].textContent = "Dark Mode" : toggleIcon.children[0].textContent = "Light Mode";
 
-targetExtend === 'main' ? toggleIcon.children[1].classList.replace("fa-moon", "fa-sun") : toggleIcon.children[1].classList.replace("fa-sun", "fa-moon");
+targetExtend === 'main' ? toggleIcon.children[1].classList.replace("fa-sun", "fa-moon") : toggleIcon.children[1].classList.replace("fa-moon", "fa-sun");
 
 targetExtend === 'main' ? 
 localStorage.setItem('theme','dark'):
