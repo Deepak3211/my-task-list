@@ -75,11 +75,12 @@ ul li{
 
 }
 ul li:nth-child(odd) {
-  background: #694e4e;
+  background: #644e69;
 
 }
 ul li:nth-child(even){
   background: rgb(230, 160, 56);
+  color: rgb(19, 1, 1);
 }
 ul li:hover {
   background: rgb(54, 215, 236);
